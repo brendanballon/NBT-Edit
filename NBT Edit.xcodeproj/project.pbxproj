@@ -14,6 +14,13 @@
 		542A9902270F914B00A3EFF9 /* NBT_EditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A9901270F914B00A3EFF9 /* NBT_EditTests.swift */; };
 		542A990C270F914B00A3EFF9 /* NBT_EditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A990B270F914B00A3EFF9 /* NBT_EditUITests.swift */; };
 		542A990E270F914B00A3EFF9 /* NBT_EditUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A990D270F914B00A3EFF9 /* NBT_EditUITestsLaunchTests.swift */; };
+		543C13562713FA8B0040B2B7 /* MinecraftNBT in Frameworks */ = {isa = PBXBuildFile; productRef = 543C13552713FA8B0040B2B7 /* MinecraftNBT */; };
+		543C13592713FA970040B2B7 /* Gzip in Frameworks */ = {isa = PBXBuildFile; productRef = 543C13582713FA970040B2B7 /* Gzip */; };
+		543C135B2714579B0040B2B7 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C135A2714579B0040B2B7 /* Struct.swift */; };
+		543C135E2714EFE70040B2B7 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 543C135D2714EFE70040B2B7 /* OrderedCollections */; };
+		5466C0EF27138F0E0023DF08 /* NBTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5466C0ED27138D640023DF08 /* NBTKit.framework */; };
+		5466C0F027138F0E0023DF08 /* NBTKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5466C0ED27138D640023DF08 /* NBTKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5466C0F22713A6C70023DF08 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5466C0F12713A6C70023DF08 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5466C0EC27138D1E0023DF08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5466C0F027138F0E0023DF08 /* NBTKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		542A98EC270F914A00A3EFF9 /* NBT Edit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBT Edit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542A98EF270F914A00A3EFF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +66,10 @@
 		542A9907270F914B00A3EFF9 /* NBT EditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NBT EditUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542A990B270F914B00A3EFF9 /* NBT_EditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBT_EditUITests.swift; sourceTree = "<group>"; };
 		542A990D270F914B00A3EFF9 /* NBT_EditUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBT_EditUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		542A991A270F988800A3EFF9 /* NBT-Edit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NBT-Edit-Info.plist"; sourceTree = SOURCE_ROOT; };
+		543C135A2714579B0040B2B7 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		5466C0ED27138D640023DF08 /* NBTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NBTKit.framework; sourceTree = "<group>"; };
+		5466C0F12713A6C70023DF08 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5466C0EF27138F0E0023DF08 /* NBTKit.framework in Frameworks */,
+				543C13562713FA8B0040B2B7 /* MinecraftNBT in Frameworks */,
+				543C135E2714EFE70040B2B7 /* OrderedCollections in Frameworks */,
+				543C13592713FA970040B2B7 /* Gzip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +108,7 @@
 				542A9900270F914B00A3EFF9 /* NBT EditTests */,
 				542A990A270F914B00A3EFF9 /* NBT EditUITests */,
 				542A98ED270F914A00A3EFF9 /* Products */,
+				5466C0E427138B810023DF08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +125,14 @@
 		542A98EE270F914A00A3EFF9 /* NBT Edit */ = {
 			isa = PBXGroup;
 			children = (
+				542A991A270F988800A3EFF9 /* NBT-Edit-Info.plist */,
 				542A98EF270F914A00A3EFF9 /* AppDelegate.swift */,
 				542A98F1270F914A00A3EFF9 /* ViewController.swift */,
+				543C135A2714579B0040B2B7 /* Struct.swift */,
 				542A98F3270F914B00A3EFF9 /* Assets.xcassets */,
 				542A98F5270F914B00A3EFF9 /* Main.storyboard */,
 				542A98F8270F914B00A3EFF9 /* NBT_Edit.entitlements */,
+				5466C0F12713A6C70023DF08 /* Credits.rtf */,
 			);
 			path = "NBT Edit";
 			sourceTree = "<group>";
@@ -121,6 +154,14 @@
 			path = "NBT EditUITests";
 			sourceTree = "<group>";
 		};
+		5466C0E427138B810023DF08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5466C0ED27138D640023DF08 /* NBTKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,12 +172,18 @@
 				542A98E8270F914A00A3EFF9 /* Sources */,
 				542A98E9270F914A00A3EFF9 /* Frameworks */,
 				542A98EA270F914A00A3EFF9 /* Resources */,
+				5466C0EC27138D1E0023DF08 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "NBT Edit";
+			packageProductDependencies = (
+				543C13552713FA8B0040B2B7 /* MinecraftNBT */,
+				543C13582713FA970040B2B7 /* Gzip */,
+				543C135D2714EFE70040B2B7 /* OrderedCollections */,
+			);
 			productName = "NBT Edit";
 			productReference = 542A98EC270F914A00A3EFF9 /* NBT Edit.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +256,11 @@
 				Base,
 			);
 			mainGroup = 542A98E3270F914A00A3EFF9;
+			packageReferences = (
+				543C13542713FA8B0040B2B7 /* XCRemoteSwiftPackageReference "MinecraftTools" */,
+				543C13572713FA970040B2B7 /* XCRemoteSwiftPackageReference "GzipSwift" */,
+				543C135C2714EFE70040B2B7 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 542A98ED270F914A00A3EFF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -226,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				542A98F4270F914B00A3EFF9 /* Assets.xcassets in Resources */,
+				5466C0F22713A6C70023DF08 /* Credits.rtf in Resources */,
 				542A98F7270F914B00A3EFF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543C135B2714579B0040B2B7 /* Struct.swift in Sources */,
 				542A98F2270F914A00A3EFF9 /* ViewController.swift in Sources */,
 				542A98F0270F914A00A3EFF9 /* AppDelegate.swift in Sources */,
 			);
@@ -420,13 +474,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "NBT Edit/NBT_Edit.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AXPP7NWL2;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NBT-Edit-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -447,13 +507,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "NBT Edit/NBT_Edit.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AXPP7NWL2;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NBT-Edit-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -605,6 +671,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		543C13542713FA8B0040B2B7 /* XCRemoteSwiftPackageReference "MinecraftTools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ezfe/MinecraftTools";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		543C13572713FA970040B2B7 /* XCRemoteSwiftPackageReference "GzipSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1024jp/GzipSwift";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		543C135C2714EFE70040B2B7 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		543C13552713FA8B0040B2B7 /* MinecraftNBT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 543C13542713FA8B0040B2B7 /* XCRemoteSwiftPackageReference "MinecraftTools" */;
+			productName = MinecraftNBT;
+		};
+		543C13582713FA970040B2B7 /* Gzip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 543C13572713FA970040B2B7 /* XCRemoteSwiftPackageReference "GzipSwift" */;
+			productName = Gzip;
+		};
+		543C135D2714EFE70040B2B7 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 543C135C2714EFE70040B2B7 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 542A98E4270F914A00A3EFF9 /* Project object */;
 }
